@@ -1,2 +1,399 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
 /* font-family: 'Work Sans', sans-serif; */
+
+/*--------------------- 
+  Common Styles
+  -------------------- */
+:root{
+	--blackish: #131313;
+	--darkset-gray: #424242;
+	--gray: #727272;
+	--orange: #FF900E;
+}
+
+*{margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body{
+	font-family: 'Work Sans', sans-serif;
+}
+
+.common-width{
+	max-width: 1440px;
+	padding: 50px;
+
+}
+
+.primary-button{
+	padding: 20px 25px;
+	background: var(--orange);
+	border-radius: 8px;
+	border: 0;
+
+/* button font style*/
+	font-weight: 600;
+	font-size: 20px;
+	text-align: center;
+	color: #FFFFFF; 
+}
+
+.section-title,
+.logo a{
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 53px;
+	color: var(--blackish);
+}
+
+p{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px;
+	color: var(--gray);
+}
+
+a{
+	text-decoration: none;
+}
+
+
+/*----------------------------------------------------------
+  Common Styles End
+  --------------------------------------------------------- */
+
+/* Header Start */
+
+header{
+	background: rgba(255, 144, 14, 0.1);
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 102px;
+}
+
+nav ul{
+	display: flex;
+	align-items: center;
+}
+
+nav ul li{
+	margin-left: 20px;
+	list-style-type: none;
+}
+
+nav ul li a{
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 26px;
+	text-align: center;
+	color: var(--darkest-gray);
+}
+
+/* ---------------------------------- banner section ------------------*/
+
+.banner{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.banner-text{
+	width: 868px;
+}
+.banner .banner-text h2{
+	font-weight: 700;
+	font-size: 64px;
+	line-height: 75px;
+	color: var(--blackish);
+	margin-bottom: 30px;
+}
+
+
+.banner-image {
+	margin-top: 80px;
+}
+.banner-image img{
+	width: 100%;
+}
+
+.banner button{
+	margin: 32px 0;
+}
+
+
+/* --------------------- Quick List Section ----------------- */
+
+.quick-list{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 30px;
+	margin: 80px 0;
+	align-items: center;
+	justify-content: space-around;
+	}
+
+.quick-list-images{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr); 
+	gap: 10px;
+}
+
+.quick-list-images img{
+	width: 300px;
+
+}
+.quick-list-text h2 {
+	margin-bottom: 30px;
+}
+.quick-list-text h2 span:first-child{
+	color: var(--gray);
+}
+
+.quick-list-text h2 span:last-child{
+	color: var(--orange);
+}
+
+.quick-list-text p {
+	margin-bottom: 30px;
+}
+
+/* ---------------------Features Section styles ----------------- */
+.feature-section{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 54px;
+}
+
+.feature-text h2{
+	border-left: 5px solid var(--orange);
+	margin-bottom: 24px;
+}
+
+.feature-text .feature-title-para{
+	margin-bottom: 24px;
+}
+
+.different-features .features{
+	padding: 30px 42px 30px 30px;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+	border-radius: 8px;
+	margin-top: 20px;
+}
+
+.different-features .features h3{
+	margin-bottom: 10px;
+}
+
+
+.feature-image .special-button{
+	padding: 40px;
+}
+.feature-image .special-button span:first-child{
+	font-weight: 700;
+	font-size: 65px;
+	line-height: 70px;
+}
+
+.feature-button-block{
+	margin-top: -100px;
+	margin-left: -30px;
+}
+.feature-image .special-button span:last-child{
+	font-weight: 500;
+	font-size: 25px;
+	line-height: 40px;
+}
+
+
+/* ---------- Facts section ---------- */
+.facts h2{
+	margin-bottom: 24px;
+}
+
+.icon-blocks{
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+	justify-content: space-evenly;
+	margin: 100px 0;
+}
+
+.icon-block{
+	text-align: center;
+	padding: 50px 35px;
+	border-radius: 8px;
+	border: 1px solid var(--orange);
+	transition: transform 0.3s;
+}
+
+.icon-block:hover{
+	transform: scale(1.1);
+	background-color: rgba(255, 144, 14, 0.3);
+}
+
+.icon-block h3{
+	font-weight: 600;
+	font-size: 45px;
+	line-height: 53px;
+	color: var(--darkset-gray);
+}
+.icon-block h4{
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 23px;
+	color: var(--gray);
+}
+
+/* ------- sponsors block -----------*/
+.sponsors .sponsors-text{
+	text-align: center;
+}
+
+.sponsors-text h2{
+	margin-bottom: 24px;
+}
+.sponsor-image-block{
+	display: grid;
+	grid-template-columns: repeat(5, auto);
+	justify-content: space-evenly;
+	margin: 100px 0;
+}
+
+/* ----------- My Section ---------------- */
+
+.my-section{
+	text-align: center;
+	margin: 80px;
+}
+
+.my-section h3{
+	background: var(--orange);
+	border-radius: 8px;
+	padding: 80px 0;
+	transition: transform 0.3s;
+	}
+.my-section h3:hover .fa-phone{
+  transform: rotate(-12deg); 
+}
+.my-section h3 a{
+	font-weight: 700;
+	font-size: 70px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+/* footer start */
+footer{
+	background-color: #FFF4E7;
+	border-radius: 8px;
+	height: 100px;
+}
+footer h5{
+	text-align: center;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 23px;
+	color: var(--darkest-gray);
+	
+}
+
+/* ------------------------------------------------ Responsive Mobile Only --------------------------*/
+
+@media only screen and (max-width: 576px){
+			
+		.common-width{
+			max-width: 570px;
+		}
+		nav,
+		nav ul
+		{
+			flex-direction: column;
+			align-items: center;
+		} 
+
+		.quick-list, 
+		.quick-list-images,
+		.quick-list-text,
+		.feature-section,
+		.icon-blocks,
+		.sponsor-image-block{
+			grid-template-columns: repeat(1, 1fr);
+			justify-content: center;
+			gap: 15px;
+			justify-items: center;
+		}
+
+/* banner */
+.banner-text,
+.feature-text{
+
+	width: 80vw;
+}
+.banner .banner-text h2{
+	font-size: 40px;
+	line-height: 40px;
+}
+
+
+.banner-image {
+	margin-top: 80px;
+}
+.banner-image img{
+	width: 100%;
+}
+
+.banner button{
+	margin: 32px 0;
+}
+/* feature */
+.feature-image img{
+	width: 100%;
+}
+.feature-image .special-button{
+	padding: 20px;
+}
+.feature-image .special-button span:first-child{
+	font-size: 40px;
+	line-height: 20px;
+}
+
+.feature-button-block{
+	margin-top: -50px;
+}
+.feature-image .special-button span:last-child{
+	font-size: 15px;
+}
+
+/* sponsor*/
+.sponsor-image-block{
+	gap: 25px;
+
+}
+
+/* my section */
+.my-section h3{
+	padding: 20px 0;
+	}
+
+.my-section h3 a{
+	font-size: 30px;
+}
+
+/* footer */
+footer{
+	background-color: #FFF4E7;
+	border-radius: 8px;
+}
+footer h5{
+	font-weight: 400;
+	font-size: 12px;
+	
+}
+
+}
